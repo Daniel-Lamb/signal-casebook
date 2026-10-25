@@ -16,6 +16,7 @@ const cases = [
     takeaway: "The operation embedded itself inside genuine political communities instead of relying only on obviously automated posting.",
     sourceLabel: "DOJ indictment",
     sourceUrl: "https://www.justice.gov/d9/fieldable-panel-panes/basic-panes/attachments/2018/02/16/internet_research_agency_indictment.pdf",
+    articleUrl: "articles/internet-research-agency.html",
     substackUrl: ""
   },
   {
@@ -344,6 +345,10 @@ function openCase(id, updateHash = true) {
     ? `<a class="button primary" href="${item.substackUrl}" target="_blank" rel="noreferrer">Read on Substack</a>`
     : `<span class="button disabled" aria-disabled="true">Substack article not published</span>`;
 
+  const articleAction = item.articleUrl
+    ? `<a class="button primary" href="${item.articleUrl}">Read full article</a>`
+    : "";
+
   dialogContent.innerHTML = `
     <header class="dialog-header">
       <p class="dialog-kicker">${item.region} / ${item.period}</p>
@@ -365,6 +370,7 @@ function openCase(id, updateHash = true) {
     </section>
     <p class="dialog-note">The evidence establishes that the operation existed and attempted to manipulate public debate. It does not, by itself, prove that the operation changed an election result or persuaded a measurable number of people.</p>
     <div class="dialog-actions">
+      ${articleAction}
       ${substackAction}
       <a class="button secondary" href="${item.sourceUrl}" target="_blank" rel="noreferrer">Open primary source</a>
       <a class="button secondary" href="#case/${item.id}">Copyable case link</a>
