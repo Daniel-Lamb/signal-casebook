@@ -1,15 +1,14 @@
 # Bot Farm Case Studies
 
-A static website that presents sourced case studies of bot farms, troll networks, and coordinated inauthentic behavior used to manipulate public opinion online.
+A static website that presents 15 sourced case studies of bot farms, troll networks, and coordinated inauthentic behavior used to manipulate public opinion online.
 
-## Included Cases
+## Features
 
-- Russia's Internet Research Agency and the 2016 U.S. election
-- China's Spamouflage influence network
-- Philippine political troll and influencer-for-hire systems
-- Myanmar military-linked Facebook pages
-- Iran-linked Liberty Front Press and inauthentic media brands
-- Russia's Doppelganger fake local news operation
+- Fifteen documented international case studies
+- Filtering by operation type and sorting by date, region, or evidence
+- Shareable detail views at `#case/<case-id>`
+- Primary-source links for every case
+- A `substackUrl` field on every case in `script.js`; add the published URL to enable its **Read on Substack** button
 
 ## Local Preview
 

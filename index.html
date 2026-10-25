@@ -3,15 +3,15 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bot Farm Case Studies</title>
+    <title>Signal Casebook | Documented Influence Operations</title>
     <meta
       name="description"
-      content="A sourced field guide to online bot farms, troll networks, and coordinated inauthentic campaigns used to manipulate public opinion."
+      content="Fifteen documented bot farms, troll networks, and coordinated influence operations used to manipulate public opinion."
     >
-    <meta property="og:title" content="Bot Farm Case Studies">
+    <meta property="og:title" content="Signal Casebook">
     <meta
       property="og:description"
-      content="Six documented influence operations, their playbooks, signals, and consequences."
+      content="Fifteen documented influence operations, their playbooks, evidence, and consequences."
     >
     <meta property="og:image" content="assets/network-operations-hero.png">
     <link rel="stylesheet" href="styles.css">
@@ -23,7 +23,7 @@
         <div class="nav-links">
           <a href="#cases">Cases</a>
           <a href="#patterns">Patterns</a>
-          <a href="#sources">Sources</a>
+          <a href="#method">Method</a>
         </div>
       </nav>
       <div class="hero-grid">
@@ -46,7 +46,7 @@
             alt="Abstract network visualization of fake profile clusters and amplification paths."
           >
           <figcaption>
-            Six documented operations, from paid troll teams to cross-platform fake-account networks.
+            Fifteen documented operations, from paid troll teams to cross-platform fake-account networks.
           </figcaption>
         </figure>
       </div>
@@ -55,178 +55,54 @@
     <main>
       <section class="overview" aria-label="Overview">
         <article>
-          <span class="metric">6</span>
-          <p>public case studies with named source material</p>
+          <span class="metric">15</span>
+          <p>documented influence operations with named evidence</p>
         </article>
         <article>
-          <span class="metric">50+</span>
-          <p>platforms touched by the Spamouflage network according to Meta reporting</p>
+          <span class="metric">10+</span>
+          <p>countries where operators or organizations were publicly attributed</p>
         </article>
         <article>
-          <span class="metric">2013</span>
-          <p>the approximate start of the IRA operation described in U.S. Senate testimony</p>
+          <span class="metric">A-C</span>
+          <p>evidence grades separating legal records from platform attribution</p>
         </article>
       </section>
 
       <section class="section-heading" id="cases">
         <p class="eyebrow">Case files</p>
-        <h2>Different ways operators tried to sway the public</h2>
+        <h2>Documented attempts to manufacture public support</h2>
         <p>
-          These examples mix automated posting, paid human operators, fake media
-          brands, hijacked pages, and persona accounts. The common thread is
-          deception about who is speaking and how much genuine support exists.
+          The operations are proven to have existed and attempted to manipulate
+          debate. Inclusion does not mean that an operation changed an election
+          result or measurably persuaded the public.
         </p>
       </section>
 
-      <section class="filter-panel" aria-label="Filter case studies">
-        <button class="chip active" type="button" data-filter="all">All</button>
-        <button class="chip" type="button" data-filter="election">Elections</button>
-        <button class="chip" type="button" data-filter="state">State-linked</button>
-        <button class="chip" type="button" data-filter="domestic">Domestic politics</button>
-        <button class="chip" type="button" data-filter="platform">Platform takedown</button>
+      <section class="case-controls" aria-label="Browse case studies">
+        <div class="filter-panel" role="group" aria-label="Filter cases">
+          <button class="chip active" type="button" data-filter="all">All</button>
+          <button class="chip" type="button" data-filter="election">Elections</button>
+          <button class="chip" type="button" data-filter="state">State-linked</button>
+          <button class="chip" type="button" data-filter="domestic">Domestic</button>
+          <button class="chip" type="button" data-filter="commercial">Commercial</button>
+        </div>
+        <div class="sort-control">
+          <label for="sort-cases">Sort by</label>
+          <select id="sort-cases">
+            <option value="newest">Newest first</option>
+            <option value="oldest">Oldest first</option>
+            <option value="region">Region A-Z</option>
+            <option value="evidence">Strongest evidence</option>
+          </select>
+        </div>
       </section>
 
-      <section class="case-grid" aria-live="polite">
-        <article class="case-card" data-tags="election state platform">
-          <div class="case-topline">
-            <span class="region">Russia / United States</span>
-            <span class="date">2014-2017</span>
-          </div>
-          <h3>Internet Research Agency and the 2016 U.S. election</h3>
-          <p>
-            Operators posed as Americans, ran issue pages, bought ads, organized
-            events, and used fake personas to inflame existing political divides.
-          </p>
-          <dl>
-            <div>
-              <dt>Playbook</dt>
-              <dd>Identity deception, audience segmentation, meme pages, cross-platform amplification.</dd>
-            </div>
-            <div>
-              <dt>Signal</dt>
-              <dd>Accounts framed local U.S. grievances while hiding foreign control and coordination.</dd>
-            </div>
-          </dl>
-          <a href="https://www.justice.gov/archives/opa/pr/grand-jury-indicts-thirteen-russian-individuals-and-three-russian-companies-scheme-interfere">DOJ indictment summary</a>
-        </article>
+      <div class="results-line">
+        <p id="results-count" aria-live="polite"></p>
+        <p>Open a case for the evidence, tactics, and article link.</p>
+      </div>
 
-        <article class="case-card" data-tags="state platform">
-          <div class="case-topline">
-            <span class="region">China / Global</span>
-            <span class="date">2019-2023</span>
-          </div>
-          <h3>Spamouflage's cross-platform propaganda network</h3>
-          <p>
-            Meta and researchers described a large pro-China network posting on
-            dozens of platforms while praising Chinese policy and attacking critics.
-          </p>
-          <dl>
-            <div>
-              <dt>Playbook</dt>
-              <dd>Mass fake accounts, recycled spam pages, multilingual posting, platform hopping.</dd>
-            </div>
-            <div>
-              <dt>Signal</dt>
-              <dd>Large scale did not guarantee real influence; much engagement came from the network itself.</dd>
-            </div>
-          </dl>
-          <a href="https://techcrunch.com/2023/08/29/meta-shut-down-a-disinformation-campaign-tied-to-chinese-law-enforcement/">Meta takedown coverage</a>
-        </article>
-
-        <article class="case-card" data-tags="election domestic">
-          <div class="case-topline">
-            <span class="region">Philippines</span>
-            <span class="date">2016 onward</span>
-          </div>
-          <h3>Political troll teams and influencer-for-hire systems</h3>
-          <p>
-            Researchers documented how paid operators, influencers, and fake news
-            producers worked together around Philippine electoral politics.
-          </p>
-          <dl>
-            <div>
-              <dt>Playbook</dt>
-              <dd>Paid comment teams, message discipline, harassment of critics, influencer laundering.</dd>
-            </div>
-            <div>
-              <dt>Signal</dt>
-              <dd>Human-operated networks can be more persuasive than obvious automation.</dd>
-            </div>
-          </dl>
-          <a href="https://eprints.whiterose.ac.uk/id/eprint/127312/">Architects of Networked Disinformation</a>
-        </article>
-
-        <article class="case-card" data-tags="state domestic platform">
-          <div class="case-topline">
-            <span class="region">Myanmar</span>
-            <span class="date">2018-2021</span>
-          </div>
-          <h3>Military-linked pages posing as independent communities</h3>
-          <p>
-            Facebook removed pages and accounts linked to Myanmar's military that
-            appeared to be independent entertainment, beauty, and information pages.
-          </p>
-          <dl>
-            <div>
-              <dt>Playbook</dt>
-              <dd>Front pages, covert administration, engagement farming, reconstitution after takedowns.</dd>
-            </div>
-            <div>
-              <dt>Signal</dt>
-              <dd>Seemingly apolitical pages can become infrastructure for propaganda and intimidation.</dd>
-            </div>
-          </dl>
-          <a href="https://about.fb.com/news/2018/08/removing-myanmar-officials/">Meta 2018 removal notice</a>
-        </article>
-
-        <article class="case-card" data-tags="state platform">
-          <div class="case-topline">
-            <span class="region">Iran / Multiple regions</span>
-            <span class="date">2018</span>
-          </div>
-          <h3>Liberty Front Press and inauthentic media brands</h3>
-          <p>
-            FireEye identified an Iran-origin influence operation using fake news
-            sites and associated social accounts aimed at audiences in the U.S.,
-            U.K., Latin America, and the Middle East.
-          </p>
-          <dl>
-            <div>
-              <dt>Playbook</dt>
-              <dd>False media outlets, copied content, ideological targeting, linked account clusters.</dd>
-            </div>
-            <div>
-              <dt>Signal</dt>
-              <dd>Websites can backstop fake personas and make coordinated accounts look legitimate.</dd>
-            </div>
-          </dl>
-          <a href="https://cloud.google.com/blog/topics/threat-intelligence/suspected-iranian-influence-operation">Mandiant / FireEye analysis</a>
-        </article>
-
-        <article class="case-card" data-tags="state platform election">
-          <div class="case-topline">
-            <span class="region">Russia / Europe and U.S.</span>
-            <span class="date">2022-2024</span>
-          </div>
-          <h3>Doppelganger and fake local news sites</h3>
-          <p>
-            U.S. authorities described a Russian government-directed campaign
-            using lookalike domains and covert influence content to mimic trusted
-            media brands and steer debate.
-          </p>
-          <dl>
-            <div>
-              <dt>Playbook</dt>
-              <dd>Typosquat domains, cloned news layouts, social distribution, narrative testing.</dd>
-            </div>
-            <div>
-              <dt>Signal</dt>
-              <dd>The farm is not always on one platform; it can be a publishing stack plus amplifiers.</dd>
-            </div>
-          </dl>
-          <a href="https://www.justice.gov/archives/opa/pr/justice-department-disrupts-covert-russian-government-sponsored-foreign-malign-influence">DOJ 2024 disruption</a>
-        </article>
-      </section>
+      <section class="case-grid" id="case-grid" aria-live="polite"></section>
 
       <section class="patterns" id="patterns">
         <div class="section-heading compact">
@@ -257,33 +133,35 @@
         </div>
       </section>
 
-      <section class="sourcebook" id="sources">
+      <section class="method" id="method">
         <div>
-          <p class="eyebrow">Sourcebook</p>
-          <h2>Primary and research sources used</h2>
-          <p>
-            The site separates documented cases from speculation. Each case links
-            to public reporting, platform disclosures, government documents, or
-            academic research.
-          </p>
+          <p class="eyebrow">Editorial method</p>
+          <h2>What counts as documented</h2>
         </div>
-        <ol>
-          <li><a href="https://www.justice.gov/d9/fieldable-panel-panes/basic-panes/attachments/2018/02/16/internet_research_agency_indictment.pdf">U.S. v. Internet Research Agency indictment, February 16, 2018</a></li>
-          <li><a href="https://www.intelligence.senate.gov/2018/12/17/press-new-reports-shed-light-internet-research-agency-e2-80-99s-social-media-tactics/">U.S. Senate Select Committee on Intelligence, IRA social media tactics reports, December 17, 2018</a></li>
-          <li><a href="https://about.fb.com/news/2022/09/removing-coordinated-inauthentic-behavior-from-china-and-russia/">Meta, coordinated inauthentic behavior from China and Russia, September 27, 2022</a></li>
-          <li><a href="https://techcrunch.com/2023/08/29/meta-shut-down-a-disinformation-campaign-tied-to-chinese-law-enforcement/">TechCrunch coverage of Meta's 2023 Spamouflage takedown, August 29, 2023</a></li>
-          <li><a href="https://ora.ox.ac.uk/objects/uuid%3Acef7e8d9-27bf-4ea5-9fd6-855209b3e1f6/files/m3ca8c455852611e82d0fb182445a471f">Oxford Internet Institute, Global Inventory of Organized Social Media Manipulation, 2017</a></li>
-          <li><a href="https://eprints.whiterose.ac.uk/id/eprint/127312/">Ong and Cabanes, Architects of Networked Disinformation, 2018</a></li>
-          <li><a href="https://about.fb.com/news/2018/08/removing-myanmar-officials/">Meta, removing Myanmar military officials, August 28, 2018</a></li>
-          <li><a href="https://about.fb.com/news/2019/08/more-cib-myanmar/">Meta, additional Myanmar CIB takedowns, August 21, 2019</a></li>
-          <li><a href="https://cloud.google.com/blog/topics/threat-intelligence/suspected-iranian-influence-operation">Mandiant / FireEye, suspected Iranian influence operation, August 21, 2018</a></li>
-          <li><a href="https://www.justice.gov/archives/opa/pr/justice-department-disrupts-covert-russian-government-sponsored-foreign-malign-influence">DOJ, Doppelganger disruption, September 4, 2024</a></li>
-        </ol>
+        <div class="method-copy">
+          <p>
+            Every case must be supported by a court record, law-enforcement action,
+            platform investigation, or published forensic research. Evidence grades
+            describe the public record, not the severity or effectiveness of the campaign.
+          </p>
+          <dl class="grade-list">
+            <div><dt>Grade A</dt><dd>Court record or official law-enforcement action.</dd></div>
+            <div><dt>Grade B</dt><dd>Platform attribution supported by technical or independent research.</dd></div>
+            <div><dt>Grade C</dt><dd>Platform attribution with limited public technical detail.</dd></div>
+          </dl>
+        </div>
       </section>
     </main>
 
+    <dialog class="case-dialog" id="case-dialog" aria-labelledby="dialog-title">
+      <div class="dialog-shell">
+        <button class="dialog-close" type="button" aria-label="Close case">Close</button>
+        <div id="dialog-content"></div>
+      </div>
+    </dialog>
+
     <footer>
-      <p>Built as a public-interest casebook. Claims should be updated when new platform disclosures or court records become available.</p>
+      <p>Built as a public-interest casebook. Claims should be updated when new disclosures or court records become available.</p>
       <a href="#top">Back to top</a>
     </footer>
 
