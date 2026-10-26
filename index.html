@@ -17,42 +17,52 @@
     <link rel="stylesheet" href="styles.css">
   </head>
   <body>
-    <header class="hero" id="top">
-      <nav class="nav" aria-label="Primary navigation">
-        <a class="brand" href="#top">Signal Casebook</a>
-        <div class="nav-links">
-          <a href="#cases">Cases</a>
-          <a href="#patterns">Patterns</a>
-          <a href="#method">Method</a>
-        </div>
-      </nav>
-      <div class="hero-grid">
-        <section class="hero-copy" aria-labelledby="page-title">
-          <p class="eyebrow">Coordinated inauthentic behavior</p>
-          <h1 id="page-title">Case studies in manufactured consensus</h1>
-          <p class="lede">
-            Bot farms and troll networks do not need to persuade everyone. They
-            make a narrative look popular, flood weak points in the information
-            system, and pressure real people to amplify the signal.
-          </p>
-          <div class="hero-actions">
-            <a class="button primary" href="#cases">Review the cases</a>
-            <a class="button secondary" href="#patterns">Compare tactics</a>
-          </div>
-        </section>
-        <figure class="hero-art">
-          <img
-            src="assets/network-operations-hero.png"
-            alt="Abstract network visualization of fake profile clusters and amplification paths."
-          >
-          <figcaption>
-            Fifteen documented operations, from paid troll teams to cross-platform fake-account networks.
-          </figcaption>
-        </figure>
+    <header class="site-header" id="top">
+      <div class="utility-bar">
+        <p>Independent public-interest research</p>
+        <a href="#method">How cases are verified</a>
       </div>
+      <div class="masthead">
+        <a class="brand" href="#top">Signal Casebook</a>
+        <p>Influence operations, documented</p>
+      </div>
+      <nav class="nav" aria-label="Primary navigation">
+        <div class="nav-links">
+          <a href="#cases">Case files</a>
+          <a href="#patterns">Analysis</a>
+          <a href="#method">Methodology</a>
+        </div>
+        <span>15 investigations</span>
+      </nav>
     </header>
 
     <main>
+      <section class="front-page" aria-labelledby="page-title">
+        <div class="front-heading">
+          <p class="eyebrow">Influence operations</p>
+          <p>Reporting based on court records, platform investigations, and forensic research</p>
+        </div>
+        <div class="lead-story">
+          <a class="lead-media" href="articles/internet-research-agency.html" aria-label="Read the Internet Research Agency case study">
+            <img
+              src="assets/network-operations-hero.png"
+              alt="Network visualization representing clusters of coordinated social-media accounts."
+            >
+          </a>
+          <article class="lead-copy">
+            <p class="story-label">Lead case study</p>
+            <h1 id="page-title"><a href="articles/internet-research-agency.html">The Internet Research Agency and the 2016 U.S. election</a></h1>
+            <p class="lede">
+              A St. Petersburg organization built audiences under false American identities,
+              entered political communities, and moved some of its activity into real-world events.
+              The operation is well documented; its effect on voters is not.
+            </p>
+            <p class="story-meta">Russia / United States <span aria-hidden="true">|</span> 8 min read</p>
+            <a class="read-story" href="articles/internet-research-agency.html">Read the full case study</a>
+          </article>
+        </div>
+      </section>
+
       <section class="overview" aria-label="Overview">
         <article>
           <span class="metric">15</span>
@@ -69,7 +79,7 @@
       </section>
 
       <section class="section-heading" id="cases">
-        <p class="eyebrow">Case files</p>
+        <p class="eyebrow">The archive</p>
         <h2>Documented attempts to manufacture public support</h2>
         <p>
           The operations are proven to have existed and attempted to manipulate
@@ -107,7 +117,7 @@
       <section class="patterns" id="patterns">
         <div class="section-heading compact">
           <p class="eyebrow">Pattern recognition</p>
-          <h2>What repeats across the cases</h2>
+          <h2>Recurring methods</h2>
         </div>
         <div class="pattern-grid">
           <article>
