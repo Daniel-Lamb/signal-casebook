@@ -31,4 +31,6 @@ Then visit `http://localhost:4173`.
 
 ## Deployment
 
-The repository includes a GitHub Pages workflow. After pushing to GitHub, enable GitHub Pages with **Source: GitHub Actions** in the repository settings if it is not already enabled.
+Production: [signal-casebook.vercel.app](https://signal-casebook.vercel.app)
+
+The site is deployed to Vercel from the static files in this repository.
